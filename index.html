@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coffee Lab</title>
+    <link rel="shortcut icon" href="media/img/favicon.ico" type="image/x-icon" />
+    <!--======================
+    // Meta Tags
+    ======================-->
+    <meta charset="utf-8">
+    <meta name="keywords" content="fast food, chicken, wings, hot, lite weight meal, family, dinner, lunch">
+    <meta name="description" content="Taste Well is a fast food restaurant serving delouse lite weight meals for the whole family.">
+    <meta name="robots" content="index, nofollow">
+    <meta name="author" content="Paul Simelane">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--======================
+    // Styles
+    ======================-->
+    <link rel="stylesheet" href="css/select2/select2.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fonts/icons/fontawesome/css/ionicons.css">
+</head>
+    <div class="load">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <body class="dark-bg">
+        <div class="z-999 cart-alert">
+            <div class="secondary-font cart-alert__block">
+                <div class="items-center justify-center flex cart-alert__wrap">
+                    <span class="mr2 primary-clr cart-alert__icon"><!-- icon --></span><span class="light-clr cart-alert__message"><!-- message --></span>
+                </div>
+                <div class="tr cart-alert__wrap">
+                    <button class="secondary-font cart-alert__btn primary-bg">OK</button>
+                </div>
+            </div>
+        </div>
+        <div id="Navbar " class="navbar navbar__loose br0 bw0">
+            <div class="logo-bar"></div>
+            <div class="navbar__container">
+                <h2 class="navbar__logo fw9"><a href="#"><img src="media/img/logo.png" alt="logo"></a></h2>
+                <div class="navbar__nav nav menu">
+                    <div class="menu__btnArea">
+                        <button class="bn cart__info"><span id="cartCount">0</span><i class="ion-ios-cart"></i></button>
+                        <div id="menu-close"><i class="ion-android-close"></i></div>
+                    </div>
+                    <div class="menu__wrapper">
+                        <ul id="navList" class="ma0 nav__list">
+                            <li class="nav__item"><a class="nav__link secondary-font active" href="#Home">Home</a></li>
+                            <li class="nav__item"><a class="nav__link secondary-font" href="#About">About</a></li>
+                            <li class="nav__item"><a class="nav__link secondary-font" href="#Store">Store</a></li>
+                            <li class="nav__item"><a class="nav__link secondary-font" href="#Menu">Menu</a></li>
+                            <li class="nav__item"><a class="nav__link secondary-font" href="#Team">Team</a></li>
+                            <li class="nav__item"><a class="nav__link secondary-font" href="#Contact">Contact</a></li>
+                        </ul>
+                        <div class="cart cart--show">
+                            <div class="cart__container">
+                                <ul class="cart__checklist">
+                                <!-- <li class="cart__item">
+                                        <img class="cart__img" src="media/img/cart/Coffee.jpg" alt="">
+                                        <div class="cart__text-wrap">
+                                            <h4 class="cart__title">Coffee</h4>
+                                            <span class="cart__price"><span class="currency">R</span><span>2500</span></span>
+                                        </div>
+                                        <i class="ion-android-delete"></i>
+                                </li>  -->
+                                </ul>
+                                <div class="f3 pv3 flex justify-around">
+                                    <span>Total</span><div><span class="currency">R</span><span id="total">00.00</span></div>
+                                </div>
+                                <div class="flex justify-around">
+                                    <input type="button" value="clear cart" class="cart__btn--clear mr2">
+                                    <input type="button" value="check out" class="cart__btn--checkout">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu-open"><i class="ion-android-menu"></i></div>
+            </div>
+        </div><!-- [ Navbar ] -->
+        <div id="Home" class="header">
+            <div class="overlay-bg flex items-center">
+                <div class="container">
+                    <div class="header__content">
+                        <div class="">
+                            <h1 class="secondary-font f1 mb2 ma0">We Serve The Best <br> Coffee In Town</h1>
+                            <p class="mb3">You won't be disappointed. we keep it 100%</p>
+                            <a href="#Menu"><input type="button" value="Our Menu" class="mr2 btn--primary"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- [ Home] -->
+        <div id="About" class="pt4-ns pb5-ns pv3 sit-section about">
+            <h2 class="h1 secondary-font light-clr title--underline">
+                <span>About Us</span>
+            </h2>
+            <div class="mt4-ns mt4 container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 tl-ns tc-ns db-m about--img flex items-center justify-center">
+                        <div class="about__img">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 tj">
+                        <p>
+                            Amet consectetur adipisicing elit. Eligendi nobis inventore quos amet perferendis autem sit error ullam labore dolorem pariatur aliquid ipsum, vel ab? Tempora laboriosam dolorum quaerat perferendis similique dolorem. Pariatur, quidem? Alias beatae minus, vitae sequi iste reprehenderit. Nam distinctio optio ad eius exercitationem porro reprehenderit ex.
+                        </p>
+                        <p>
+                            Perferendis autem sit error ullam labore dolorem pariatur aliquid ipsum, ab? Tempora laboriosam dolorum quaerat perferendis similique dolorem. Pariatur, quidem? Alias beatae minus, vitae sequi iste reprehenderit. Nam distinctio optio ad eius exercitationem.
+                        </p>
+                        <span class="title db pt1 h3 primary-clr script-font">Coffee Lab Express</span>
+                    </div>
+                </div>
+            </div>
+        </div><!-- [ About] -->
+        <div id="Store" class="pv5-ns pv3 sit-section store">
+                <h2 class="h1 light-clr secondary-font title--underline">
+                    <span>Our Store</span>
+                </h2>
+                <div class="mt4-ns mt3 relative container">
+                    <div class="row">
+                        <div class="pt2 ph2-ns col-lg-3 col-md-3">
+                            <div class="store__card">
+                                <img class="store__img" src="media/img/cart/image1.jpg" alt="coffee">
+                                <h5 class="store__title">Coffee Item</h5>
+                                <div class="store__text-wrap">
+                                    <span class="store__price"><span class="currency">R</span><span>25.00</span></span>
+                                    <input type="button" value="Add to Cart" class="store__addToCart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt2 ph2-ns col-lg-3 col-md-3">
+                            <div class="store__card">
+                                <img class="store__img" src="media/img/cart/image5.jpg" alt="coffee">
+                                <h5 class="store__title">Coffee Item</h5>
+                                <div class="store__text-wrap">
+                                    <span class="store__price"><span class="currency">R</span><span>25.00</span></span>
+                                    <input type="button" value="Add to Cart" class="store__addToCart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt2 ph2-ns col-lg-3 col-md-3">
+                            <div class="store__card">
+                                <img class="store__img" src="media/img/cart/image2.jpg" alt="coffee">
+                                <h5 class="store__title">Coffee Item</h5>
+                                <div class="store__text-wrap">
+                                    <span class="store__price"><span class="currency">R</span><span>25.00</span></span>
+                                    <input type="button" value="Add to Cart" class="store__addToCart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt2 ph2-ns col-lg-3 col-md-3">
+                            <div class="store__card">
+                                <img class="store__img" src="media/img/cart/image6.jpg" alt="coffee">
+                                <h5 class="store__title">Coffee Item</h5>
+                                <div class="store__text-wrap">
+                                    <span class="store__price"><span class="currency">R</span><span>25.00</span></span>
+                                    <input type="button" value="Add to Cart" class="store__addToCart">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="pt2 pt3-ns ph2-ns col-lg-3 col-md-3">
+                            <div class="store__card">
+                                <img class="store__img" src="media/img/cart/image3.jpg" alt="coffee">
+                                <h5 class="store__title">Coffee Item</h5>
+                                <div class="store__text-wrap">
+                                    <span class="store__price"><span class="currency">R</span><span>25.00</span></span>
+                                    <input type="button" value="Add to Cart" class="store__addToCart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt2 pt3-ns ph2-ns col-lg-3 col-md-3">
+                            <div class="store__card">
+                                <img class="store__img" src="media/img/cart/image7.jpg" alt="coffee">
+                                <h5 class="store__title">Coffee Item</h5>
+                                <div class="store__text-wrap">
+                                    <span class="store__price"><span class="currency">R</span><span>25.00</span></span>
+                                    <input type="button" value="Add to Cart" class="store__addToCart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt2 pt3-ns ph2-ns col-lg-3 col-md-3">
+                            <div class="store__card">
+                                <img class="store__img" src="media/img/cart/image4.jpg" alt="coffee">
+                                <h5 class="store__title">Coffee Item</h5>
+                                <div class="store__text-wrap">
+                                    <span class="store__price"><span class="currency">R</span><span>25.00</span></span>
+                                    <input type="button" value="Add to Cart" class="store__addToCart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt2 pt3-ns ph2-ns col-lg-3 col-md-3">
+                            <div class="store__card">
+                                <img class="store__img" src="media/img/cart/image8.jpg" alt="coffee">
+                                <h5 class="store__title">Coffee Item</h5>
+                                <div class="store__text-wrap">
+                                    <span class="store__price"><span class="currency">R</span><span>25.00</span></span>
+                                    <input type="button" value="Add to Cart" class="store__addToCart">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div><!-- [ Store ] -->
+        <div id="Menu" class="pv5-ns pv3 sit-section main-menu">
+                <h2 class="h1 secondary-font light-clr title--underline">
+                    <span>Main Menu</span>
+                </h2>
+                <div class="mt4-ns mt3 container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <ul class="menu-list">
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image1.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image2.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image3.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image4.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image5.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image6.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <ul class="menu--list">
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image7.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image8.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image9.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image2.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image1.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                                <li class="menu__block">
+                                    <img class="menu__img" src="media/img/cart_min/image9.jpg" alt="item">
+                                    <div class="menu__text-wrap">
+                                        <span class="clearfix">
+                                            <span class="menu__title light-clr fw7">Coffee Item</span><span class="menu-line primary-clr"></span><span class="menu__price fw7 primary-clr">R25,00</span>
+                                        </span>
+                                        <span class="light-clr-2">Monsectetur adipisicing vuptate.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+        </div><!-- [ Menu ] -->
+        <div id="Team" class="pv5-ns pv3 sit-section team">
+                <h2 class="h1 secondary-font light-clr title--underline">
+                    <span>Our Team</span>
+                </h2>
+                <div class="mt4-ns mt3 container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="tc pa2 light-bg team__block">
+                                <img class="team__img" src="media/img/chef.jpg" alt="">
+                                <p class="mv2 team__name dark-clr">
+                                    Andre Naidoo
+                                </p>
+                                <div class="team__socials">
+                                    <a class="social-icon" href="#"><i class="ion-social-facebook"></i></a>
+                                    <a class="social-icon" href="#"><i class="ion-social-twitter"></i></a>
+                                    <a class="social-icon" href="#"><i class="ion-social-instagram-outline"></i></a>
+                                </div>
+                                <p class="mb1 f3 dark-clr secondary-font team__name">
+                                    Head Chef
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="tc pa2 light-bg team__block">
+                                <img class="team__img" src="media/img/barista.jpg" alt="">
+                                <p class="mv2 team__name dark-clr">
+                                    Mike Lee
+                                </p>
+                                <div class="team__socials">
+                                    <a class="social-icon" href="#"><i class="ion-social-facebook"></i></a>
+                                    <a class="social-icon" href="#"><i class="ion-social-twitter"></i></a>
+                                    <a class="social-icon" href="#"><i class="ion-social-instagram-outline"></i></a>
+                                </div>
+                                <p class="mb1 f3 dark-clr secondary-font team__name">
+                                    Barista
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="tc ma0 pa2 light-bg team__block">
+                                <img class="team__img" src="media/img/manager.jpg" alt="">
+                                <p class="mv2 team__name dark-clr">
+                                    Paul Lathan
+                                </p>
+                                <div class="team__socials">
+                                    <a class="social-icon" href="#"><i class="ion-social-facebook"></i></a>
+                                    <a class="social-icon" href="#"><i class="ion-social-twitter"></i></a>
+                                    <a class="social-icon" href="#"><i class="ion-social-instagram-outline"></i></a>
+                                </div>
+                                <p class="mb1 f3 dark-clr secondary-font team__name">
+                                    Manager
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        </div><!-- [Team ] -->
+        <div id="Contact" class="pb6-ns pt5-ns pb4 pt3 sit-section contact">
+            <h2 class="h1 secondary-font light-clr title--underline">
+                <span>Keep In Touch</span>
+            </h2>
+            <div class="mt4-ns mt3 container">
+                <div class="form__wrapper">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="<?php echo $msgClass ? $msgClass : ''?>"><p><?php echo $msg ? $msg : ''?></p></div>
+                        </div>
+                    </div>
+                    <form class="reservation__form" method="POST" action="">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+                                <div class="reservation__group">
+                                    <label for="dtp_input2">Date</label>
+                                    <!-- DateTimePicker -->
+                                    <div class="input-group date form_date col-md-12 col-md-12" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                        <input class="reservation__input form-control datetimepicker--body" placeholder="Date" type="text" name="date" value="" size="16" type="text" value="" readonly>
+                                        <span class="datetimepicker--input-group input-group-addon"><span class="datetimepicker--icon glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" value="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="reservation__group">
+                                        <label for="select-beast">Time</label>
+                                    <!-- Time feild -->
+                                    <select id="select-time" class="demo-default" type="text" name="time" value="" placeholder="Time">
+                                        <option value="6:30">6:30</option>
+                                        <option value="7:00">7:00</option>
+                                        <option value="7:30">7:30</option>
+                                        <option value="8:00">8:00</option>
+                                        <option value="8:30">8:30</option>
+                                        <option value="9:00">9:00</option>
+                                        <option value="9:30">9:30</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="10:30">10:30</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="11:30">11:30</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="14:30">14:30</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="15:30">15:30</option>
+                                        <option value="16:00">16:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="reservation__group">
+                                    <label for="select-beast">People</label>
+                                    <!-- People feild -->
+                                    <select id="select-people" class="demo-code-language" placeholder="People" type="text" name="people">
+                                        <option value="1 person">1 person</option>
+                                        <option value="2 people">2 people</option>
+                                        <option value="3 people">3 people</option>
+                                        <option value="4 people">4 people</option>
+                                        <option value="5 people">5 people</option>
+                                        <option value="6 people">6 people</option>
+                                        <option value="7 people">7 people</option>
+                                        <option value="8 people">8 people</option>
+                                        <option value="9 people">9 people</option>
+                                        <option value="10 people">10 people</option>
+                                        <option value="11 people">11 people</option>
+                                        <option value="12 people">12 people</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="reservation__group">
+                                    <label for="select-beast">Name</label>
+                                    <!-- Name feild -->
+                                    <input class="reservation__input form-control" placeholder="Name" type="text" name="name" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="reservation__group">
+                                    <label for="select-beast">Phone</label>
+                                    <!-- Phone feild -->
+                                    <input class="reservation__input form-control" placeholder="Phone no." type="text" name="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="reservation__group">
+                                    <label for="select-beast">Email</label>
+                                    <!-- Email feild -->
+                                    <input class="reservation__input form-control" placeholder="Email" type="email" name="email" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="justify-center flex">
+                            <button class="btn--primary" type="submit" name="submit">Book A Table</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!-- [ Contact ] -->
+        <div id="Footer" class="footer">
+            <div class="tc pt5-ns pb6-ns pt5 pb6 container">
+                <ul class="inline-flex justify-center flex-wrap-reverse">
+                    <li class="mr3"><a class="footer-link fw6 ttu light-clr regular-font" href="#Home">Home</a></li>
+                    <li class="mr3"><a class="footer-link fw6 ttu light-clr regular-font" href="#About">About</a></li>
+                    <li class="mr3"><a class="footer-link fw6 ttu light-clr regular-font" href="#Store">Store</a></li>
+                    <li class="mr3"><a class="footer-link fw6 ttu light-clr regular-font" href="#Menu">Menu</a></li>
+                    <li class="mr3"><a class="footer-link fw6 ttu light-clr regular-font" href="#Team">Team</a></li>
+                    <li class=""><a class="footer-link fw6 ttu light-clr regular-font" href="#Contact">Contact</a></li>
+                </ul>
+                <div class="footer-socials mv5-ns mv4">
+                    <a class="social-icon mr2" href="#"><i class="ion-social-facebook"></i></a>
+                    <a class="social-icon mr2" href="#"><i class="ion-social-twitter"></i></a>
+                    <a class="social-icon" href="#"><i class="ion-social-instagram-outline"></i></a>
+                </div>
+                <div class="newsletter">
+                    <input class="newsletter__btn" type="button" value="Newsletter"><input class="newsletter__input"  type="text" placeholder="Email Address...">
+                </div>
+            </div>
+            <div class="copyright f6 pa3 light-clr-2 tc">
+                <span class="full-footer">Copyrights</span> &copy;  <span id="auto-date">2020</span> <span class="full-footer">All rights reserved</span> | Design by <span class="primary-clr builder">PaulstaGraphics</span>
+            </div>
+        </div><!-- [ Footer ] -->
+    </body>
+    <script src="js/app.min.js"></script>
+</html>
